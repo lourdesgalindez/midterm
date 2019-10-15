@@ -1,10 +1,54 @@
 .grid {
-  width: 17%;
+  width: 15%;
   display: inline-block;
   margin-left: 180px;
   margin-bottom: 10px;
 }
+/* The sidebar menu */
+.sidenav {
+  height: 77%; /* Full-height: remove this if you want "auto" height */
+  width: 250px; /* Set the width of the sidebar */
+  position: absolute;; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 205px; /* Stay at the top */
+  right: 300px;
+  font-family: 'Old Standard TT', serif;
 
+  background-color: white;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.nav a:hover {
+  color: #f1f1f1;
+  style: underline;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 .main {
   margin-bottom: 20px;
   margin-top: 100px;
@@ -24,6 +68,15 @@ h5 {
   text-align: center;
   font-size: 40px;
 }
+
+h7 {
+
+    font-family: 'Old Standard TT', serif;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+  }
+
 
 h6 {
 font-family: 'Old Standard TT', serif;
@@ -179,6 +232,8 @@ a:visited {
 
 a:hover {
   text-decoration: underline;
+  color: #b3b3b3
+;
 }
 
 a:active {
@@ -187,7 +242,7 @@ a:active {
 
 
 .hr2{
-  border: 4px solid black ;
+
   color: red;
   width: 78%;
   margin-left: 150px;
